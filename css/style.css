@@ -1,7 +1,7 @@
 /* Website template by freewebsitetemplates.com */
 body {
 	background: url(../images/bg-body.jpg) repeat;
-	color: #356618;
+	color: #3d441f;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 14px;
 	margin: 0;
@@ -19,13 +19,13 @@ p {
 	text-align: justify;
 }
 p a {
-	color: #356618;
+	color: #5d692a;
 }
 p a:hover {
 	color: #66a143;
 }
 #page {
-	background: #356618;
+	background: #3d441f;
 	margin: 0 auto;
 	padding: 0 20px;
 	width: 900px;
@@ -164,7 +164,7 @@ p a:hover {
 	background: url(../images/interface.png) no-repeat -400px -20px;
 }
 #body div.header ul {
-	background: #356618;
+	background: #3d441f;
 	list-style: none;
 	margin: 0;
 	overflow: hidden;
@@ -574,7 +574,7 @@ p a:hover {
 	background: url(../images/icons.png) no-repeat 0 -154px;
 }
 #footer p {
-	background: #356618;
+	background: #3d441f;
 	color: #ffffff;
 	height: 37px;
 	line-height: 37px;
