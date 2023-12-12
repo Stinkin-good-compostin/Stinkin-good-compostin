@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Website template by freewebsitetemplates.com -->
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>About - Garden Walkthrough Website Template</title>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<div id="page">
+		<div id="header">
+			<a href="{{ url_for('index') }}" id="logo"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo"></a>
+			<ul>
+				<li>
+					<a href="{{ url_for('index') }}">Home</a>
+				</li>
+				<li>
+					<a href="{{ url_for('about') }}">About</a>
+				</li>
+				<li class="current">
+					<a>Subscriptions</a>
+					<ul>
+						<li>
+							<a href="{{ url_for('subscriptions') }}">Subscribe</a>
+						</li>
+						<li>
+							<a href="{{ url_for('contact') }}">Subscriber Concerns</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="body">
+			<form action="{{ url_for('post') }}" method="post">
+				<div id="form-body">
+					<div id="formData">
+						<input type="email" placeholder="email" id="email" name="email" required>
+						<input type="tel" placeholder="Phone Number" id="phone" name="phone" required>
+						<input type="text" placeholder="Adress location" id="adress-location" name="adress-location" required>
+					</div>
+
+					<br>
+					<br>
+
+					<div id="formDesc">
+						<label for="dump-location"> Dumpster location description </label>
+
+						<br>
+						<br>
+
+						<textarea id="dump-location" name="dump-location" rows="10" cols="35" required>
+
+						</textarea>
+					</div>
+				</div>
+				
+				<input type="submit">
+
+				<style>
+
+				</style>
+			</form>
+
+			<script src="js/subscribe.js"></script>
+		<div id="footer">
+			<div>
+				<div>
+					<h1>Connect</h1>
+					<a href="http://www.freewebsitetemplates.com/misc/contact" target="_blank" id="mail">Email us</a>
+					<a href="http://freewebsitetemplates.com/go/facebook/" target="_blank" id="facebook">Facebook</a>
+					<a href="http://freewebsitetemplates.com/go/twitter/" target="_blank" id="twitter">Twitter</a>
+					<a href="http://freewebsitetemplates.com/go/googleplus/" target="_blank" id="googleplus">Google&#43;</a>
+				</div>
+			</div>
+			<p>
+				Garden Walkthrough &copy; 2023  | All Rights Reserved
+			</p>
+		</div>
+	</div>
+	</div>
+</body>
+</html>

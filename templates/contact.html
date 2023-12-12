@@ -1,30 +1,29 @@
 <!DOCTYPE html>
-<!-- Website template by freewebsitetemplates.com -->
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>Contact - Garden Walkthrough Website Template</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 	<div id="page">
 		<div id="header">
-			<a href="index.html" id="logo"><img src="images/logo.png" alt="Logo"></a>
+			<a href="{{ url_for('index') }}" id="logo"><img src="images/logo.png" alt="Logo"></a>
 			<ul>
 				<li>
-					<a href="index.html">Home</a>
+					<a href="{{ url_for('index') }}">Home</a>
 				</li>
 				<li>
-					<a href="about.html">About</a>
+					<a href="{{ url_for('about') }}">About</a>
 				</li>
 				<li class="current">
 					<a>Subscriptions</a>
 					<ul>
 						<li>
-							<a href="subscriptions.html">Subscribe</a>
+							<a href="{{ url_for('subscriptions')}}">Subscribe</a>
 						</li>
 						<li>
-							<a href="contact.html">Subscriber Concerns</a>
+							<a href="{{ url_for('contact') }}">Subscriber Concerns</a>
 						</li>
 					</ul>
 				</li>
@@ -33,7 +32,7 @@
 		<div id="body">
 			<div id="content">
 				<h1>Contact</h1>
-				<form action="index.html">
+				<form action="{{ url_for('index') }}">
 					<p>
 						Have concerns about our service? Send your concerns here or message us on our media's down below. These concerns can be anything from not receiving a garbage bin, or trucks not arriving on time. If you are experiencing these issues or anything else concerning let us know immediately.
 					</p>
@@ -58,20 +57,6 @@
 		</div>
 		<div id="footer">
 			<div>
-				<div>
-					<h1>Place Holder</h1>
-					<ul>
-						<li>
-							<a href="index.html">This is just a place holder</a>
-						</li>
-						<li>
-							<a href="index.html">This is just a place holder</a>
-						</li>
-						<li>
-							<a href="index.html">This is just a place holder</a>
-						</li>
-					</ul>
-				</div>
 				<div>
 					<h1>Connect</h1>
 					<a href="http://www.freewebsitetemplates.com/misc/contact" target="_blank" id="mail">Email us</a>

@@ -4,27 +4,27 @@
 <head>
 	<meta charset="UTF-8">
 	<title>About - Garden Walkthrough Website Template</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
 	<div id="page">
 		<div id="header">
-			<a href="index.html" id="logo"><img src="images/logo.png" alt="Logo"></a>
+			<a href="{{ url_for('index') }}" id="logo"><img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo"></a>
 			<ul>
 				<li>
-					<a href="index.html">Home</a>
+					<a href="{{ url_for('index') }}">Home</a>
 				</li>
 				<li class="current">
-					<a href="about.html">About</a>
+					<a href="{{ url_for('about') }}">About</a>
 				</li>
 				<li>
 					<a>Subscriptions</a>
 					<ul>
 						<li>
-							<a href="subscriptions.html">Subscribe</a>
+							<a href="{{ url_for('subscriptions') }}">Subscribe</a>
 						</li>
 						<li>
-							<a href="contact.html">Subscriber Concerns</a>
+							<a href="{{ url_for('contact') }}">Subscriber Concerns</a>
 						</li>
 					</ul>
 				</li>
@@ -48,20 +48,6 @@
 		</div>
 		<div id="footer">
 			<div>
-				<div>
-					<h1>Place Holder</h1>
-					<ul>
-						<li>
-							<a href="index.html">This is just a place holder</a>
-						</li>
-						<li>
-							<a href="index.html">This is just a place holder</a>
-						</li>
-						<li>
-							<a href="index.html">This is just a place holder</a>
-						</li>
-					</ul>
-				</div>
 				<div>
 					<h1>Connect</h1>
 					<a href="http://www.freewebsitetemplates.com/misc/contact" target="_blank" id="mail">Email us</a>
